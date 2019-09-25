@@ -1,8 +1,7 @@
-@import "common/variables";
+@charset 'utf-8';
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
-
 /**
  * Import npm dependencies
  *
@@ -11,15 +10,23 @@
  */
 // @import "~some-node-module";
 
-/** Import theme styles */
-@import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+//Vendor
+@import "vendor/__vendor-dir";
+
+//Abstracts
+@import "abstracts/__abstracts-dir";
+
+//Base Styles
+@import "base/__base-dir";
+
+//Components
+@import "components/__components-dir";
+
+//Layout
+@import "layouts/__layouts-dir";
+
+//Pages
+@import "pages/__pages-dir";
+
+//Themes
+@import "themes/__themes-dir";

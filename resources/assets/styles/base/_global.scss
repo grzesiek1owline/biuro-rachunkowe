@@ -1,0 +1,19 @@
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  background: $primary__background-color;
+  font-family: $primary__font-family;
+  font-size: 16px;
+  color: $primary__font-color;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
