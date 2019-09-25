@@ -1,10 +1,10 @@
 <header class="header">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-12">
           <div class="nav">
               <a class="brand">
-                  <img src="" alt="" class="logo">
+                br
               </a>
               <div class="hamburger d-block d-lg-none">
                   <span class="hamburger__line"></span>

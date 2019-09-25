@@ -1,0 +1,31 @@
+.btn {
+  border-radius: 100px;
+  background-color: $ctaColor;
+  border: none;
+  color: $primaryFontColor;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 200ms ease;
+  font-size: calc-em(16px);
+  font-weight: 500;
+  font-family: inherit;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--tel {
+    background-image: url("../images/tele.svg");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 35px center;
+    padding: 12px 40px 12px 65px;
+
+    &:hover {
+      opacity: 1;
+      background-image: url("../images/tele2.svg");
+      color: $ctaColor;
+      background-color: $primaryFontColor;
+    }
+  }
+}

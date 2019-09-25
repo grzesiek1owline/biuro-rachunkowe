@@ -2,6 +2,7 @@
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
+
 /**
  * Import npm dependencies
  *
@@ -23,7 +24,7 @@
 @import "components/__components-dir";
 
 //Layout
-@import "layouts/__layouts-dir";
+@import "layout/__layouts-dir";
 
 //Pages
 @import "pages/__pages-dir";

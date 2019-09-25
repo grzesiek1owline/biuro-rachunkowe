@@ -1,8 +1,5 @@
 // Fonts
-$primary__font-family: "Proxima Nova Rg";
-$second__font-family: "Adobe Garamond Pro";
-$font-heading: $primary__font-family;
-$font-paragraph: $second__font-family;
+$primaryFont: "Ubuntu", sans-serif;
 
 // Font Sizing
 $baseFontSize      : 16px;
@@ -10,12 +7,15 @@ $baseLineHeight    : 1.5;
 $headingLineHeight : 1.2;
 
 // Colors
-$primary__font-color: #252b67;
-$second__font-color: #fff;
-$third__font-color: #35c3fe;
+$primaryFontColor: #fff;
+$hoverFontColor: #3a79f9;
+$darkFontColor: #171a1e;
 
-$primary__background-color: #fff;
-$second__background-color: #ebebf5;
+$primaryBgColor: #fff;
+$secondBgColor:#151c3e;
+$thirdBgColor: #3a79f9;
+
+$ctaColor: #3a79f9;
 
 // Spacing
 $pad : 1em;
@@ -23,3 +23,4 @@ $pad : 1em;
 // Breakpoints
 $smallBreakpoint : 600px;
 $largeBreakpoint : 1080px;
+
