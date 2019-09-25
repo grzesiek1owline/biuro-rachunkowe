@@ -1,0 +1,166 @@
+.section {
+  padding: 95px 0 100px;
+}
+
+.section-intro {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 160px 0 175px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 28, 62, 0.64);
+    z-index: 1;
+  }
+}
+
+.intro {
+  &__body {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 670px;
+  }
+}
+
+.section-title {
+  color: $ctaColor;
+
+  &__small {
+    text-transform: uppercase;
+    color: inherit;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+
+  &__head {
+    color: $darkFontColor;
+    font-size: calc-em(40px);
+    line-height: 1.25;
+  }
+}
+
+.about__pgh {
+  padding-top: 45px;
+}
+
+.about__row {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.box-icon {
+  background-color: #f0f0f0;
+  color: $darkFontColor;
+  padding: 40px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  &__image {
+    margin-bottom: 20px;
+    height: 60px;
+    width: auto;
+  }
+}
+
+.about__details {
+  background-image: url("../images/about@2x.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px 0 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 28, 62, 0.9);
+    z-index: 1;
+  }
+
+  @include rwd(1400px) {
+    background-image: url("../images/about.png");
+  }
+}
+
+.details {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__list {
+    list-style: none;
+    color: #fff;
+    margin: 0 0 30px;
+    padding: 0;
+    padding-right: 20px;
+    align-self: flex-end;
+  }
+
+  &__element {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      background-image: url("../images/Icon_awesome-check.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.baner {
+  color: #fff;
+  text-align: center;
+  padding: 45px 85px;
+  background-color: $thirdBgColor;
+  margin: 100px 0;
+
+  &__text {
+    font-size: calc-em(30px);
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 25px;
+    padding: 0;
+  }
+}
+
+.section-about {
+  padding-bottom: 0;
+}
+
+.section-prices {
+  padding-top: 0;
+}

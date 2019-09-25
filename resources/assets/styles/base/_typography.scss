@@ -9,19 +9,62 @@ body {
   font-weight: 500;
 }
 
-// Header Styles
+a {
+  font-weight: inherit;
+}
+
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1 {
+  font-size: calc-em(60px);
+  line-height: 1.25;
   font-weight: 500;
   margin: 0;
+  color: inherit;
+}
 
-  a {
-    font-weight: inherit;
-  }
+h2,
+.h2 {
+  font-size: calc-em(40px);
+  line-height: 1.25;
+  font-weight: 500;
+  margin: 0;
+  color: inherit;
+}
+
+h3,
+.h3 {
+  font-size: calc-em(20px);
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+  color: inherit;
+}
+
+h4,
+.h4 {
+  font-size: calc-em(60px);
+  line-height: 1.25;
+  font-weight: 500;
+  margin: 0;
+  color: inherit;
+}
+
+h5,
+.h5 {
+  font-size: calc-em(60px);
+  line-height: 1.25;
+  font-weight: 500;
+  margin: 0;
+  color: inherit;
+}
+
+h6,
+.h6 {
+  font-size: calc-em(60px);
+  line-height: 1.25;
+  font-weight: 500;
+  margin: 0;
+  color: inherit;
 }
 
 p {
@@ -32,3 +75,22 @@ p {
 em { font-style: italic; }
 strong { font-weight: bold; }
 .uppercase { text-transform: uppercase; }
+
+.pgh {
+  color: inherit;
+  font-size: calc-em(16px);
+  font-weight: 400;
+  line-height: 1.55;
+
+  &--light {
+    color: #fff;
+  }
+
+  &--dark {
+    color: #707070;
+  }
+
+  &--subtitle {
+    font-size: calc-em(30px);
+  }
+}

@@ -3,15 +3,17 @@
   background-color: $ctaColor;
   border: none;
   color: $primaryFontColor;
+  cursor: pointer;
   text-decoration: none;
-  padding: 10px;
+  padding: 13px 45px;
   transition: all 200ms ease;
   font-size: calc-em(16px);
   font-weight: 500;
   font-family: inherit;
 
   &:hover {
-    opacity: 0.9;
+    color: $ctaColor;
+    background-color: $primaryFontColor;
   }
 
   &--tel {
@@ -27,5 +29,10 @@
       color: $ctaColor;
       background-color: $primaryFontColor;
     }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 2px solid $primaryFontColor;
   }
 }
