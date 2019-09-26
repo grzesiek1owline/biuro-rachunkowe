@@ -227,14 +227,26 @@
 
 
 <section class="section section-team">
-  <div class="section__half-bg"></div>
+  <div class="half-bg">
+    <img src="@asset('images/kobieta@2x.png')" alt="" class="half-img">
+  </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 offset-0 offset-lg-6">
+      <div class="col-12 col-lg-6 offset-0 offset-lg-6 team-text">
         <div class="section-title">
-          <p class="section-title__small">sdfsdf</p>
-          <h2 class="section-title__head">sdfsdfsdfsdfsdfsdf</h2>
-          <p class="pgh">sddssad</p>
+          <p class="section-title__small">poznaj nas</p>
+          <h2 class="section-title__head section-title__head--light">Biuro Rachunkowe</h2>
+          <p class="pgh pgh--light">
+            W skład biura wchodzą dwa podmioty świadczące ten sam zakres usług:
+            - Biuro Rachunkowe Wiesława Renata Wyrzykowska
+            - Biuro Rachunkowe dr Wojciech Wyrzykowski
+            <br><br>
+            Renata Wyrzykowska
+            przez 30 lat kierowała pionami finansowymi dużych firm Trójmiasta.
+            <br><br>
+            Wojciech Wyrzykowski
+            oprócz wieloletniej praktyki zawodowej jest również wykładowcą akademickim  autorem kilkudziesięciu publikacji w tym 10 monografii dotyczących zagadnień, podatkowych, rachunkowych i przedsiębiorczości. Wykłada m.in. przedmioty: Prawo podatkowe, rachunkowość podatkowa, międzynarodowe prawo podatkowe i przedsiębiorczość w UE.
+          </p>
         </div>
       </div>
     </div>
@@ -247,10 +259,10 @@
       <div class="col-12">
         <div class="baner">
           <p class="baner__text">
-            ewrwerwerwer
+            Chcesz dowiedzieć się więcej? Chętnie porozmawiamy o tym co możemy dla Ciebie zrobić
           </p>
           <button class="btn btn--transparent">
-            umów spotkanie
+            Umów spotkanie
           </button>
         </div>
       </div>
@@ -261,12 +273,60 @@
 <section class="section section-slider">
   <div class="container">
     <div class="row">
-      <ul class="testimonials">
-        <li class="testimonial">
-          <p class="pgp">dsffdf</p>
-          <p class="pgh">Adam z Krakowa</p>
-        </li>
-      </ul>
+
+        <div class="glide">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="testimonial">
+                    <p class="pgh pgh--testimonial">
+                      Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae
+                    </p>
+                    <p class="pgh pgh--author text-right">
+                      Marek z Kielc
+                    </p>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="testimonial">
+                      <p class="pgh pgh--testimonial">
+                        Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae
+                      </p>
+                      <p class="pgh pgh--author text-right">
+                        Marek z Kielc
+                      </p>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                      <div class="testimonial testimonial--even">
+                        <p class="pgh pgh--testimonial">
+                          Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae
+                        </p>
+                        <p class="pgh pgh--author text-right">
+                          Marek z Kielc
+                        </p>
+                      </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="testimonial">
+                          <p class="pgh pgh--testimonial">
+                            Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae
+                          </p>
+                          <p class="pgh pgh--author text-right">
+                            Marek z Kielc
+                          </p>
+                        </div>
+                      </li>
+              </ul>
+            </div>
+
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+        </div>
+
     </div>
   </div>
 </section>

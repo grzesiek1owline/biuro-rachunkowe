@@ -11,6 +11,12 @@
  */
 // @import "~some-node-module";
 
+// SLICK CAROUSEL
+// Required Core Stylesheet
+//@import "node_modules/@glidejs/glide/dist/css/glide.core.css";
+// Optional Theme Stylesheet
+//@import "node_modules/@glidejs/glide/dist/css/glide.theme.css";
+
 //Vendor
 @import "vendor/__vendor-dir";
 

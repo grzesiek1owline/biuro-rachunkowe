@@ -93,4 +93,15 @@ strong { font-weight: bold; }
   &--subtitle {
     font-size: calc-em(30px);
   }
+
+  &--testimonial {
+    color: $halfDarkFontColor;
+    font-size: calc-em(20px);
+    font-weight: 400;
+  }
+
+  &--author {
+    color: $ctaColor;
+    font-weight: 400;
+  }
 }

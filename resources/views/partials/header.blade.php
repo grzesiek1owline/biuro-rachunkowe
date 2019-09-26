@@ -7,9 +7,12 @@
                 br
               </a>
               <div class="hamburger d-block d-lg-none">
-                  <span class="hamburger__line"></span>
-                  <span class="hamburger__line"></span>
-                  <span class="hamburger__line"></span>
+                  <div id="nav-icon3">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
               </div>
               <div class="hamburger__target">
                 <ul class="menu">
