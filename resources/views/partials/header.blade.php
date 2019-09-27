@@ -1,9 +1,9 @@
-<header class="header">
+<header class="header header--page">
   <div class="container">
     <div class="row">
       <div class="col-12">
           <div class="nav">
-              <a class="brand">
+              <a class="brand brand--header">
                 br
               </a>
               <div class="hamburger d-block d-lg-none">
@@ -14,10 +14,10 @@
                       <span></span>
                   </div>
               </div>
-              <div class="hamburger__target">
+              <div class="hamburger__target js-hamburger__target">
                 <ul class="menu">
                   <li class="menu__element">
-                    <a href="">Oferta</a>
+                    <a href="#oferta">Oferta</a>
                   </li>
                   <li class="menu__element">
                     <a href="">Cennik</a>

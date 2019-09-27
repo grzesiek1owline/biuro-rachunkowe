@@ -194,6 +194,18 @@
   }
 }
 
+@mixin rwdh($size) {
+  @media all and (max-height: #{$size}) {
+    @content;
+  }
+}
+
+@mixin rwdmh($size) {
+  @media all and (min-height: #{$size}) {
+    @content;
+  }
+}
+
 // border radius
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;

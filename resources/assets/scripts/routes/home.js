@@ -5,14 +5,15 @@ export default {
     // JavaScript to be fired on the home page
     $(document).ready(function(){
 
-      $('#nav-icon3').click(function(){
-        $(this).toggleClass('open');
-      });
-
       let testimonials = new Glide('.glide', {
         type: 'slider',
         startAt: 0,
         perView: 2,
+        breakpoints: {
+          992: {
+            perView: 1,
+          },
+        },
       });
       testimonials.mount();
     })

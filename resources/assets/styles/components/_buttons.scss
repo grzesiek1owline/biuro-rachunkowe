@@ -5,7 +5,7 @@
   color: $primaryFontColor;
   cursor: pointer;
   text-decoration: none;
-  padding: 13px 45px;
+  padding: 11px 40px;
   transition: all 200ms ease;
   font-size: calc-em(16px);
   font-weight: 500;
@@ -41,7 +41,7 @@
 #nav-icon2,
 #nav-icon3,
 #nav-icon4 {
-  width: 60px;
+  width: 50px;
   height: 30px;
   position: relative;
   margin: 0 auto;
@@ -61,7 +61,7 @@
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 6px;
+  height: 4px;
   width: 100%;
   background: $ctaColor;
   border-radius: 9px;
@@ -85,11 +85,11 @@
 
 #nav-icon3 span:nth-child(2),
 #nav-icon3 span:nth-child(3) {
-  top: 18px;
+  top: 15px;
 }
 
 #nav-icon3 span:nth-child(4) {
-  top: 36px;
+  top: 30px;
 }
 
 #nav-icon3.open span:nth-child(1) {

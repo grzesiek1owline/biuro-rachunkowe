@@ -2,16 +2,21 @@
 .footer {
   background: $secondBgColor;
   color: #fff;
-  padding: 75px 0;
+  padding: 85px 0 65px;
 
   &__row {
-    padding: 0 0 75px;
+    padding: 0 0 50px;
   }
 }
 
 .contact {
   margin: 0;
   width: 100%;
+  padding-left: 50px;
+
+  @include rwd(992px) {
+    padding: 40px 0 40px 0;
+  }
 
   &__list {
     list-style: none;
@@ -72,12 +77,12 @@
   }
 
   &__column-left {
-    width: 45%;
+    width: 42%;
     padding-right: 10px;
   }
 
   &__column-right {
-    width: 55%;
+    width: 57%;
   }
 }
 
@@ -85,14 +90,18 @@
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
-  padding: 7px 13px;
+  padding: 1px 13px 4px;
   font-family: $primaryFont;
   font-size: calc-em(12px);
   color: $darkFontColor;
+  position: relative;
 }
 
 input[type="submit"] {
   width: auto;
+  height: 30px;
+  padding: 0 37px;
+  margin-top: 10px;
 }
 
 .textarea {
@@ -108,6 +117,6 @@ input[type="submit"] {
 .map {
   display: block;
   width: 100%;
-  height: 650px;
+  height: 390px;
   position: relative;
 }

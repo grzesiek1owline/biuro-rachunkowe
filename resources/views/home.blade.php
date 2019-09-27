@@ -13,7 +13,7 @@
   </div>
 </section>
 
-<section class="section section-about">
+<section class="section section-about" id="oferta">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-6">
-        <div class="text-center text-lg-left">
+        <div class="text-center text-md-left text-lg-left">
           <p class="pgh pgh--dark about__pgh">
             Biura działa na rynku od 2000 r. Działalność oparta jest o wieloletnie doświadczanie zawodowe ich
             właścicieli i pracowników. <br /><br />
@@ -148,7 +148,7 @@
   </div>
 </section>
 
-<section class="section section-prices">
+<section class="section section-prices" id="cennik">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -156,7 +156,7 @@
           <p class="baner__text">
             Chcesz dowiedzieć się więcej? Chętnie porozmawiamy o tym co możemy dla Ciebie zrobić
           </p>
-          <button class="btn btn--transparent">
+          <button class="btn btn--transparent btn--bigger">
             Umów spotkanie
           </button>
         </div>
@@ -171,7 +171,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-5">
         <p class="pgh pgh--dark">
           Opłaty za usługi, które świadczy biuro rachunkowe ustalane są indywidualnie w drodze negocjacji z Klientem.
           Uzależnione są one między innymi od:
@@ -194,8 +194,8 @@
           </li>
         </ul>
       </div>
-      <div class="col-12 col-lg-6">
-        <ul class="details__list">
+      <div class="col-12 col-lg-7">
+        <ul class="details__list details__list--right">
           <li class="details__element">
             <p class="pgh pgh--dark">dddd</p>
           </li>
@@ -226,7 +226,7 @@
 </section>
 
 
-<section class="section section-team">
+<section class="section section-team" id="onas">
   <div class="half-bg">
     <img src="@asset('images/kobieta@2x.png')" alt="" class="half-img">
   </div>
@@ -236,10 +236,10 @@
         <div class="section-title">
           <p class="section-title__small">poznaj nas</p>
           <h2 class="section-title__head section-title__head--light">Biuro Rachunkowe</h2>
-          <p class="pgh pgh--light">
+          <p class="pgh pgh--light team-pgh">
             W skład biura wchodzą dwa podmioty świadczące ten sam zakres usług:
-            - Biuro Rachunkowe Wiesława Renata Wyrzykowska
-            - Biuro Rachunkowe dr Wojciech Wyrzykowski
+            - Biuro Rachunkowe Wiesława Renata Wyrzykowska <br>
+            - Biuro Rachunkowe dr Wojciech Wyrzykowski <br>
             <br><br>
             Renata Wyrzykowska
             przez 30 lat kierowała pionami finansowymi dużych firm Trójmiasta.
@@ -257,11 +257,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="baner">
+        <div class="baner baner--team">
           <p class="baner__text">
             Chcesz dowiedzieć się więcej? Chętnie porozmawiamy o tym co możemy dla Ciebie zrobić
           </p>
-          <button class="btn btn--transparent">
+          <button class="btn btn--transparent btn--bigger">
             Umów spotkanie
           </button>
         </div>
@@ -330,5 +330,4 @@
     </div>
   </div>
 </section>
-
 @endsection

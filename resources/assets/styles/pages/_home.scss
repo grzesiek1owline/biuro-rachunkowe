@@ -1,5 +1,5 @@
 .section {
-  padding: 95px 0 100px;
+  padding: 80px 0 100px;
 }
 
 .section-intro {
@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 160px 0 175px;
+  padding: 180px 0 170px;
   position: relative;
 
   &::after {
@@ -32,6 +32,10 @@
     width: 100%;
     max-width: 670px;
   }
+
+  &__pgh {
+    margin-top: 5px;
+  }
 }
 
 .section-title {
@@ -40,7 +44,7 @@
   &__small {
     text-transform: uppercase;
     color: inherit;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     padding: 0;
   }
 
@@ -56,12 +60,16 @@
 }
 
 .about__pgh {
-  padding-top: 45px;
+  padding: 35px 0 0 20px;
+
+  @include rwd(992px) {
+    padding: 35px 0 0;
+  }
 }
 
 .about__row {
-  margin-top: 60px;
-  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 65px;
 }
 
 .box-icon {
@@ -75,6 +83,7 @@
   text-align: center;
   height: 100%;
   width: 100%;
+  margin-bottom: 20px;
 
   &__image {
     margin-bottom: 20px;
@@ -115,6 +124,12 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include rwd(992px) {
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
   &__list {
     list-style: none;
     color: #fff;
@@ -122,6 +137,19 @@
     padding: 0;
     padding-right: 20px;
     align-self: flex-end;
+
+    @include rwd(992px) {
+      align-self: flex-start;
+      padding-right: 0;
+    }
+
+    &--right {
+      padding-left: 40px;
+
+      @include rwd(992px) {
+        padding-left: 0;
+      }
+    }
   }
 
   &__element {
@@ -148,15 +176,23 @@
 .baner {
   color: #fff;
   text-align: center;
-  padding: 45px 85px;
+  padding: 45px 85px 40px;
   background-color: $thirdBgColor;
-  margin: 100px 0;
+  margin: 100px 0 80px;
+
+  @include rwd(992px) {
+    padding: 45px 50px 40px;
+  }
+
+  &--team {
+    margin: 20px 0 0;
+  }
 
   &__text {
     font-size: calc-em(30px);
     font-weight: 500;
     line-height: 1.5;
-    margin: 0 0 25px;
+    margin: 0 0 18px;
     padding: 0;
   }
 }
@@ -172,6 +208,11 @@
 .section-team {
   position: relative;
   background-color: $secondBgColor;
+  padding-top: 50px;
+
+  @include rwd(992px) {
+    padding-top: 0;
+  }
 }
 
 .half-bg {
@@ -181,6 +222,12 @@
   width: 50%;
   height: 100%;
   overflow: hidden;
+
+  @include rwd(992px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .half-img {
@@ -193,11 +240,20 @@
 
 .team-text {
   padding: 0 0 0 50px;
+
+  @include rwd(992px) {
+    padding: 50px 0 0 0;
+  }
+}
+
+.team-pgh {
+  margin-top: 30px;
 }
 
 .section-slider {
   background-color: #f0f0f0;
   color: $halfDarkFontColor;
+  padding-bottom: 15px;
 }
 
 .glide {
@@ -209,7 +265,7 @@
   padding-right: 75px;
   display: block;
   position: relative;
-  padding-top: 5px;
+  padding-top: 0;
 
   &--even {
     padding-right: 0;
@@ -220,7 +276,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: -20px;
     width: 16px;
     height: 16px;
     background: url("../images/cs.svg") center center/contain no-repeat;

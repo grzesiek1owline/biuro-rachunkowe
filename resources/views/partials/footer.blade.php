@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" id="kontakt">
     <div class="container">
         <div class="row footer__row">
             <div class="col-12 col-lg-3">
@@ -11,7 +11,7 @@
                     pede cursus vitae
                 </p>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-4">
                 <div class="contact">
                     <h3>Kontakt</h3>
                     <ul class="contact__list">
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-5">
                 <div class="contact__form">
                     <h3>Napisz wiadomość</h3>
                     <form class="form" action="">
@@ -60,7 +60,7 @@
                                     </div>
                         </div>
                         <div class="form__submit">
-                            <input class="btn" type="submit" value="Wyślij wiadomość">
+                            <input class="btn" type="submit" value="Wyślij">
                         </div>
                     </form>
                 </div>
