@@ -58,6 +58,7 @@
   }
 }
 
+.contact__form form,
 .form {
   margin-top: 30px;
   display: flex;
@@ -70,6 +71,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
+
+    @include rwd(768px) {
+      flex-direction: column;
+    }
   }
 
   &__submit {
@@ -79,10 +84,19 @@
   &__column-left {
     width: 42%;
     padding-right: 10px;
+
+    @include rwd(768px) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   &__column-right {
     width: 57%;
+
+    @include rwd(768px) {
+      width: 100%;
+    }
   }
 }
 

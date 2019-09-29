@@ -1,11 +1,17 @@
 <header class="header header--page">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
           <div class="nav">
-              <a class="brand brand--header">
-                br
-              </a>
+            @php
+                $brandType = get_field('typ_logo','option');
+                $url = site_url();
+
+                if($brandType == 'text'){
+                  echo '<a href="'.$url.'" class="brand brand--header">'.get_field('logo_tekstowe','option').'</a>';
+                } else {
+                  $img = get_field('obraz_logo','option');
+                  echo '<a href="'.$url.'" class="brand brand--header"><img class="brand__img" scr="'.$img['url'].'"></img></a>';
+                }
+            @endphp
               <div class="hamburger d-block d-lg-none">
                   <div id="nav-icon3">
                       <span></span>
@@ -15,26 +21,11 @@
                   </div>
               </div>
               <div class="hamburger__target js-hamburger__target">
-                <ul class="menu">
-                  <li class="menu__element">
-                    <a href="#oferta">Oferta</a>
-                  </li>
-                  <li class="menu__element">
-                    <a href="">Cennik</a>
-                  </li>
-                  <li class="menu__element">
-                      <a href="">O nas</a>
-                  </li>
-                  <li class="menu__element">
-                      <a href="">Kontakt</a>
-                  </li>
-                </ul>
-                <a href="" class="btn btn--tel">
-                  58 668 03 05
-                </a>
+                @if (has_nav_menu('primary_navigation'))
+                  {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu', 'container' => false, 'menu_id' => 'site-menu']) !!}
+                @endif
+                <a href="tel:+{!! get_field('telefon','option') !!}" class="btn btn--tel">{!! get_field('telefon','option') !!}</a>
               </div>
           </div>
-      </div>
-    </div>
   </div>
 </header>

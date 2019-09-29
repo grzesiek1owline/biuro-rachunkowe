@@ -53,6 +53,14 @@
     font-size: calc-em(40px);
     line-height: 1.25;
 
+    @include rwd(768px) {
+      font-size: calc-em(30px);
+    }
+
+    @include rwd(500px) {
+      font-size: calc-em(26px);
+    }
+
     &--light {
       color: $primaryFontColor;
     }

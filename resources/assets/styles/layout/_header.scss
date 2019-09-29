@@ -1,10 +1,6 @@
 // Header Styles
 body {
   padding-top: 0;
-
-  @include rwdmh(550px) {
-    padding-top: 60px;
-  }
 }
 
 .header {

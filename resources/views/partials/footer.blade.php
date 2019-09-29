@@ -2,13 +2,19 @@
     <div class="container">
         <div class="row footer__row">
             <div class="col-12 col-lg-3">
-                <a class="brand">
-                    br
-                </a>
+                @php
+                    $brandType = get_field('typ_logo','option');
+                    $url = site_url();
+
+                    if($brandType == 'text'){
+                      echo '<a href="'.$url.'" class="brand brand--header">'.get_field('logo_tekstowe','option').'</a>';
+                    } else {
+                      $img = get_field('obraz_logo','option');
+                      echo '<a href="'.$url.'" class="brand brand--header"><img class="brand__img" scr="'.$img['url'].'"></img></a>';
+                    }
+                @endphp
                 <p class="pgh">
-                    Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
-                    Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam
-                    pede cursus vitae
+                    {!! get_field('krotka_informacja_w_stopce','option') !!}
                 </p>
             </div>
             <div class="col-12 col-lg-4">
@@ -20,7 +26,7 @@
                                 <img src="@asset('images/tele2.svg')" width="20px" alt="Telefon ikona">
                             </div>
                             <div class="contact__info">
-                                <a href="tel:+48586680305" class="contact__way contact__way--href">+48 58 668 03 05</a>
+                                <a href="tel:+{!! get_field('telefon','option') !!}" class="contact__way contact__way--href">{!! get_field('telefon','option') !!}</a>
                             </div>
                         </li>
                         <li class="contact__element">
@@ -28,8 +34,8 @@
                                 <img src="@asset('images/mail.svg')" width="25px" alt="Email ikona">
                             </div>
                             <div class="contact__info">
-                                <a href="mailto:biuro@wwyrzykowski.pl"
-                                    class="contact__way contact__way--href">biuro@wwyrzykowski.pl</a>
+                                <a href="mailto:{!! get_field('email','option') !!}"
+                                    class="contact__way contact__way--href">{!! get_field('email','option') !!}</a>
                             </div>
                         </li>
                         <li class="contact__element">
@@ -38,8 +44,7 @@
                             </div>
                             <div class="contact__info">
                                 <p class="contact__way">
-                                    ul.Kurpiowska 33 lok.1 <br>
-                                    81-554 Gdynia
+                                    {!! get_field('adres','option') !!}
                                 </p>
                             </div>
                         </li>
@@ -49,20 +54,10 @@
             <div class="col-12 col-lg-5">
                 <div class="contact__form">
                     <h3>Napisz wiadomość</h3>
-                    <form class="form" action="">
-                        <div class="form__body">
-                                <div class="form__column-left">
-                                        <input class="input" type="text" placeholder="Telefon">
-                                        <input class="input" type="text" placeholder="E-mail">
-                                    </div>
-                                    <div class="form__column-right">
-                                        <textarea class="textarea" placeholder="Wiadomość" name=""></textarea>
-                                    </div>
-                        </div>
-                        <div class="form__submit">
-                            <input class="btn" type="submit" value="Wyślij">
-                        </div>
-                    </form>
+                    @php
+                        $sh = get_field('formularz','option');
+                        echo do_shortcode($sh);
+                    @endphp
                 </div>
             </div>
         </div>
@@ -71,10 +66,9 @@
     <div id="map" class="map"></div>
 
     <script>
-        //['Body Beauty Fit', 52.165351, 21.076764]
         var map;
-        var lat=52.165351;
-        var lng=21.076764;
+        var lat= {{ get_field('szerokosc_geograficzna','option') }}; //sz
+        var lng= {{ get_field('dlugosc_geograficzna','option') }};
         var zoom=10;
         function initialize() {
                     var myLatlng = new google.maps.LatLng(lat,lng);
@@ -262,7 +256,7 @@
                     var map = new google.maps.Map(document.getElementById("map"), myOptions);
 
                     var markers = [
-                        ['Body Beauty Fit', 52.165351, 21.076764]
+                        ['Body Beauty Fit', lat, lng]
                     ];
 
                     var sizeX = 32;
@@ -288,8 +282,6 @@
                     }
                 }
     </script>
-    <script defer
-        src="https://maps.google.com/maps/api/js?key=AIzaSyDrLtGTboYDKumuS-IM4cn1_BqpG6ZYP5w&callback=initialize"
-        type="text/javascript"> </script>
+    <script defer src="https://maps.google.com/maps/api/js?key={{ get_field('google_maps_api','option') }}&callback=initialize" type="text/javascript"> </script>
 
 </footer>

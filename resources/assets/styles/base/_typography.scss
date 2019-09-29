@@ -20,6 +20,14 @@ h1,
   font-weight: 500;
   margin: 0;
   color: inherit;
+
+  @include rwd(768px) {
+    font-size: calc-em(40px);
+  }
+
+  @include rwd(500px) {
+    font-size: calc-em(30px);
+  }
 }
 
 h2,
@@ -29,6 +37,14 @@ h2,
   font-weight: 500;
   margin: 0;
   color: inherit;
+
+  @include rwd(768px) {
+    font-size: calc-em(30px);
+  }
+
+  @include rwd(500px) {
+    font-size: calc-em(26px);
+  }
 }
 
 h3,
@@ -92,6 +108,14 @@ strong { font-weight: bold; }
 
   &--subtitle {
     font-size: calc-em(30px);
+
+    @include rwd(768px) {
+      font-size: calc-em(30px);
+    }
+
+    @include rwd(500px) {
+      font-size: calc-em(26px);
+    }
   }
 
   &--testimonial {
