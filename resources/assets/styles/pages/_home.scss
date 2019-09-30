@@ -247,10 +247,10 @@
 }
 
 .team-text {
-  padding: 0 0 0 50px;
+  padding: 0 20px 50px;
 
   @include rwd(992px) {
-    padding: 50px 0 0 0;
+    padding: 50px 20px 0;
   }
 }
 
@@ -278,6 +278,11 @@
   &--even {
     padding-right: 0;
     padding-left: 75px;
+
+    @include rwd(992px) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
 
   &::before {
@@ -288,5 +293,10 @@
     width: 16px;
     height: 16px;
     background: url("../images/cs.svg") center center/contain no-repeat;
+  }
+
+  @include rwd(992px) {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
