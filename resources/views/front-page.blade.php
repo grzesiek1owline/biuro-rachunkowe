@@ -11,7 +11,7 @@ $imageHero = get_field('heroBg');
         <div class="intro__body">
           <h1 class="intro__title">{{ get_field('heroTitle') }}</h1>
           <p class="pgh pgh--subtitle intro__pgh">{{ get_field('heroSubTitle') }}</p>
-          <a href="{{ get_field('heroBrnURL') }}" class="btn intro__btn">{{ get_field('heroBtn') }}</a>
+          <a href="{{ get_field('heroBtnURL') }}" class="btn intro__btn">{{ get_field('heroBtn') }}</a>
         </div>
       </div>
     </div>
