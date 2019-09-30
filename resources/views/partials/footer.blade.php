@@ -7,10 +7,10 @@
                     $url = site_url();
 
                     if($brandType == 'text'){
-                      echo '<a href="'.$url.'" class="brand brand--header">'.get_field('logo_tekstowe','option').'</a>';
+                      echo '<a href="'.$url.'" class="brand brand--footer">'.get_field('logo_tekstowe','option').'</a>';
                     } else {
                       $img = get_field('obraz_logo','option');
-                      echo '<a href="'.$url.'" class="brand brand--header"><img class="brand__img" scr="'.$img['url'].'"></img></a>';
+                      echo '<a href="'.$url.'" class="brand brand--footer"><img class="brand__img" scr="'.$img['url'].'"></img></a>';
                     }
                 @endphp
                 <p class="pgh">

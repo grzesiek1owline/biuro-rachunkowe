@@ -6,7 +6,7 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
-  z-index: 105;
+  z-index: 110;
   cursor: pointer;
   transition: opacity 150ms ease;
 
@@ -30,6 +30,10 @@
   &__img {
     height: auto;
     max-height: 52px;
+  }
+
+  &--footer {
+    z-index: 104;
   }
 }
 
