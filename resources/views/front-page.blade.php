@@ -30,7 +30,7 @@ $imageHero = get_field('heroBg');
       <div class="col-12 col-lg-6">
         <div class="text-left text-md-left text-lg-left">
           <p class="pgh pgh--dark about__pgh">
-            {{ get_field('ofertaDesc') }}
+            {!! get_field('ofertaDesc') !!}
           </p>
         </div>
       </div>
