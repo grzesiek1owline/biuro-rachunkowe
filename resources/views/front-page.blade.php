@@ -4,7 +4,7 @@
 @php
 $imageHero = get_field('heroBg');
 @endphp
-<section class="section section-intro" @isset ($aboutBG) style="background-image:url({!! $imageHero['url'] !!})" @endisset>
+<section class="section section-intro" @isset ($imageHero) style="background-image:url({!! $imageHero['url'] !!})" @endisset>
   <div class="container">
     <div class="row">
       <div class="col-12">
