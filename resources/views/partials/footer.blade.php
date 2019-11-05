@@ -81,7 +81,7 @@
                     var map = new google.maps.Map(document.getElementById("map"), myOptions);
 
                     var markers = [
-                        ['Body Beauty Fit', lat, lng]
+                        ['Biuro Rachunkowe', lat, lng]
                     ];
 
                     var sizeX = 32;
