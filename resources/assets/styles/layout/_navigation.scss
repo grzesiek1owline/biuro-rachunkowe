@@ -1,7 +1,7 @@
 // Navigation
 .brand {
   color: $primaryFontColor;
-  font-size: calc-em(40px);
+  font-size: calc-em(16px);
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
@@ -13,7 +13,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 1px;
+    bottom: -2px;
     left: 0;
     width: 0;
     height: 3px;
@@ -34,6 +34,11 @@
 
   &--footer {
     z-index: 104;
+  }
+
+  & > span {
+    display: block;
+    font-size: calc-em(23px);
   }
 }
 
