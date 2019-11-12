@@ -269,4 +269,42 @@ $imageHero = get_field('heroBg');
     endif;
 @endphp
 
+
+
+@php
+    if( have_rows('klienci','option') ):
+    @endphp
+      <section class="section section-clients">
+          <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                      <p class="section-title__small">{{ get_field('clientsSubTitle2', 'option') }}</p>
+                      <h2 class="section-title__head">{{ get_field('clientsTitle2', 'option') }}</h2>
+                    </div>
+                  </div>
+            </div>
+            <div class="clients">
+    @php
+        while ( have_rows('klienci','option') ) : the_row();
+          $color = get_sub_field('kolor');
+          $image = get_sub_field('logo');
+          $size = 'medium';
+          $thumb = $image['sizes'][$size];
+          @endphp
+              <a href="{{ get_sub_field('clientsWebURL') }}" target="_blank" class="clients__item" style="background-color: {{ $color }}">
+                <img src="{{ $thumb }}" alt="{{ $image['alt'] }}">
+              </a>
+          @php
+        endwhile;
+    @endphp
+            </div>
+          </div>
+      </section>
+    @php
+    else :
+        // no rows found
+    endif;
+@endphp
+
 @endsection

@@ -532,6 +532,10 @@ if( function_exists('acf_add_local_field_group') ):
             'type' => 'text',
             ),
 
+            // ZAUFALI
+
+
+
 
           /* FIELDS END */
         ),
@@ -903,6 +907,112 @@ if( function_exists('acf_add_local_field_group') ):
                     ),
                 ),
             ),
+
+            array(
+                'key' => 'field_5d8fb13gdr59d',
+                'label' => 'Zaufali nam',
+                'name' => '',
+                'type' => 'tab',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'placement' => 'top',
+                'endpoint' => 0,
+            ),
+
+            array (
+                'key' => 'clientsTitle2',
+                'label' => 'Tytuł sekcji',
+                'name' => 'clientsTitle2',
+                'type' => 'text',
+            ),
+
+            array (
+                'key' => 'clientsSubTitle2',
+                'label' => 'Podtytuł sekcji',
+                'name' => 'clientsSubTitle2',
+                'type' => 'text',
+            ),
+
+
+            array(
+                'key' => 'field_5dcb312b9b9a1',
+                'label' => 'Klienci',
+                'name' => 'klienci',
+                'type' => 'repeater',
+                'instructions' => 'Wprowadź logo klienta i wskaż kolor tła ramki.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'collapsed' => '',
+                'min' => 0,
+                'max' => 0,
+                'layout' => 'table',
+                'button_label' => '',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_5dcb31649b9a2',
+                        'label' => 'Logo',
+                        'name' => 'logo',
+                        'type' => 'image',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'array',
+                        'preview_size' => 'medium',
+                        'library' => 'all',
+                        'min_width' => '',
+                        'min_height' => '',
+                        'min_size' => '',
+                        'max_width' => '',
+                        'max_height' => '',
+                        'max_size' => '',
+                        'mime_types' => '',
+                    ),
+                    array(
+                        'key' => 'field_5dcb318b9b9a3',
+                        'label' => 'Kolor',
+                        'name' => 'kolor',
+                        'type' => 'color_picker',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                    ),
+
+                    array (
+                        'key' => 'clientsURLwebpage',
+                        'label' => 'Odnośnik do strony klienta',
+                        'name' => 'clientsWebURL',
+                        'type' => 'text',
+                    ),
+                ),
+            ),
+
+
+
+
+
+
         ),
         'location' => array(
             array(
